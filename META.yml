@@ -15,6 +15,9 @@ meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: AnyEvent-Digest
+recommends:
+  AnyEvent::AIO: 1
+  IO::AIO: 1
 requires:
   AnyEvent: 0
   Digest: 0
@@ -23,4 +26,4 @@ requires:
 resources:
   homepage: https://github.com/yak1ex/AnyEvent-Digest
   repository: https://github.com/yak1ex/AnyEvent-Digest.git
-version: v0.0.1
+version: v0.0.2

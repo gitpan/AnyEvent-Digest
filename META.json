@@ -27,6 +27,10 @@
          }
       },
       "runtime" : {
+         "recommends" : {
+            "AnyEvent::AIO" : "1",
+            "IO::AIO" : "1"
+         },
          "requires" : {
             "AnyEvent" : "0",
             "Digest" : "0",
@@ -54,6 +58,6 @@
          "web" : "https://github.com/yak1ex/AnyEvent-Digest"
       }
    },
-   "version" : "v0.0.1"
+   "version" : "v0.0.2"
 }
 
