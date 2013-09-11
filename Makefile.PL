@@ -26,10 +26,12 @@ my %WriteMakefileArgs = (
   },
   "TEST_REQUIRES" => {
     "Digest::MD5" => 0,
+    "IO::Handle" => 0,
+    "IPC::Open3" => 0,
     "Test::Exception" => 0,
     "Test::More" => 0
   },
-  "VERSION" => "v0.0.2",
+  "VERSION" => "v0.0.3",
   "test" => {
     "TESTS" => "t/*.t"
   }
