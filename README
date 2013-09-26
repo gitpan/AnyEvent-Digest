@@ -1,7 +1,7 @@
 
 
 This archive contains the distribution AnyEvent-Digest,
-version v0.0.3:
+version v0.0.4:
 
   A tiny AnyEvent wrapper for Digest::*
 
