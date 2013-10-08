@@ -4,7 +4,7 @@ use strict;
 use warnings;
 
 # ABSTRACT: A tiny AnyEvent wrapper for Digest::*
-our $VERSION = 'v0.0.4'; # VERSION
+our $VERSION = 'v0.0.5'; # VERSION
 
 use Carp;
 use AnyEvent;
@@ -39,6 +39,7 @@ sub _by_idle
                 $call->();
             };
         } else {
+            undef $call;
             $cv->send($self);
         }
     };
@@ -69,6 +70,7 @@ sub _file_by_aio
                 $call->();
             } else {
 #print STDERR "1: $size $_[0] ",length($dat),"\n";
+                undef $call;
                 $cv->send($self);
             }
         });
@@ -168,7 +170,7 @@ AnyEvent::Digest - A tiny AnyEvent wrapper for Digest::*
 
 =head1 VERSION
 
-version v0.0.4
+version v0.0.5
 
 =head1 SYNOPSIS
 
